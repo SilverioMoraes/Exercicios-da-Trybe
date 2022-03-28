@@ -1,5 +1,9 @@
+
+  
 O que eu vou aprender na Trybe:
 
 - Unix
-- Bash
+- Festança
 - Git
+HTML
+CSS
