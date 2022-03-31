@@ -1,0 +1,26 @@
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+.destinta {
+    background-color: blue;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+body{
+    font-size: 16px;
+}
+#am{
+    color: yellow;
+}
+#ver{
+    color: red;
+}
+#mar{
+    color: brown;
+}
+
+
