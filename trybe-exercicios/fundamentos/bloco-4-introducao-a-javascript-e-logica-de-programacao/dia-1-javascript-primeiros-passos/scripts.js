@@ -1,13 +1,12 @@
-const a = 100;
-const b = 20;
-const c = 180;
+const a = 33;
 
-if (100>20 && 100>180){
-console.log(a);
+if (a>0) {
+    console.log("positive");
 }
-else if (20>100 && 20>180){
-    console.log(b);
+else if (a<0) {
+    console.log("negative");
 }
 else {
-    console.log(c);
+    console.log("zero");
+
 }
