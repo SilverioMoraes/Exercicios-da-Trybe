@@ -1,19 +1,22 @@
-const pecaDeXadrez = "rei";
+const nota = 65;
 
-switch (pecaDeXadrez.toLowerCase()) {
-    case "rei":
-        console.log("Rei->qualquer direção uma casa");
-        break;
-    case "cavalo":
-        console.log("Cavalo->duas casa vira uma casa qualquer direção pode pular peças");
-        break;
-    case "bispo":
-        console.log("Bispo->diagonais quantas casas quiser");
-        break;
-    case "rainha":
-        console.log("Rainha->qualquerr casa e quantas quiser");
-        break;
-    case "peão":
-        console.log("Peão->para frente uma casa primeira jogada pode pular duas casa");
-        break;
+if (nota >= 90){
+    console.log("A");
+}    
+else if (nota >= 80){
+    console.log("B");
 }
+else if (nota >= 70){
+    console.log("C");
+}
+else if (nota >= 60){
+    console.log("D");
+}
+else if (nota >= 50){
+    console.log("E");
+}
+else if (nota < 50 && nota > 0){
+    console.log("F");
+}
+else (nota < 0 || nota >100)
+    console.log("error")
