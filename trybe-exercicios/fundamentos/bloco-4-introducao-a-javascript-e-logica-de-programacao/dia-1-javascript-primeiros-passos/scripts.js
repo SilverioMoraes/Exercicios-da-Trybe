@@ -1,8 +1,9 @@
-const a = 3;
-const b = 4;
+const a =100;
+const b =20;
 
-console.log(a+b);
-console.log(a-b);
-console.log(a*b);
-console.log(a/b);
-console.log(a%b);
+if (100>20){
+console.log(a);
+}
+else {
+    console.log(b);
+}
