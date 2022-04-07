@@ -1,13 +1,19 @@
-const a = 45;
-const b = 45;
-const c = 90;
-if (a > 0 && b > 0 && c > 0)
-if (a+b+c == 180 ) {
-    console.log(true);
-}  
-else {
-    console.log(false);
-}   
-else {
-    console.log("ERROR");
+const pecaDeXadrez = "rei";
+
+switch (pecaDeXadrez.toLowerCase()) {
+    case "rei":
+        console.log("Rei->qualquer direção uma casa");
+        break;
+    case "cavalo":
+        console.log("Cavalo->duas casa vira uma casa qualquer direção pode pular peças");
+        break;
+    case "bispo":
+        console.log("Bispo->diagonais quantas casas quiser");
+        break;
+    case "rainha":
+        console.log("Rainha->qualquerr casa e quantas quiser");
+        break;
+    case "peão":
+        console.log("Peão->para frente uma casa primeira jogada pode pular duas casa");
+        break;
 }
