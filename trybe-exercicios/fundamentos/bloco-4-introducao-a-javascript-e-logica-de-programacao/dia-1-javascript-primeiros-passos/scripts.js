@@ -18,5 +18,5 @@ else if (nota >= 50 && nota < 100){
 else if (nota < 50 && nota > 0){
     console.log("F");
 }
-else if (nota < 0 && nota >100)
+else if (nota < 0 || nota >100)
     console.log("error")
