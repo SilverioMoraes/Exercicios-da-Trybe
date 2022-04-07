@@ -1,22 +1,10 @@
-const nota = 65;
+const a = 21;
+const b = 79;
+const c = 12;
 
-if (nota >= 90 && nota < 100){
-    console.log("A");
-}    
-else if (nota >= 80 && nota < 100){
-    console.log("B");
+let par = false ;
+
+if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0) {
+  par = true;
 }
-else if (nota >= 70 && nota < 100){
-    console.log("C");
-}
-else if (nota >= 60 && nota < 100){
-    console.log("D");
-}
-else if (nota >= 50 && nota < 100){
-    console.log("E");
-}
-else if (nota < 50 && nota > 0){
-    console.log("F");
-}
-else if (nota < 0 || nota >100)
-    console.log("error")
+console.log(par);
