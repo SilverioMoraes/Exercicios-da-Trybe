@@ -1,10 +1,10 @@
-const a = 21;
+const a = 27;
 const b = 79;
 const c = 12;
 
-let par = false ;
+let impar = false ;
 
-if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0) {
-  par = true;
+if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0) {
+  impar = true;
 }
-console.log(par);
+console.log(impar);
