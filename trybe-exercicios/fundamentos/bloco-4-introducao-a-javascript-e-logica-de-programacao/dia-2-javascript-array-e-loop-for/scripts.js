@@ -1,9 +1,6 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let menorNumero = numbers[0];
+let numbers = [];
 
-for (let i = 1; i < numbers.length; i++){
-    if (numbers[i] < menorNumero) {
-        menorNumero = numbers[i];
-    }
+for (let i = 1; i <= 25; i++){
+   numbers.push(i);
 }
-console.log(menorNumero)
+console.log(numbers);
