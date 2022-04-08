@@ -1,9 +1,14 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let maiorNumero = numbers[0];
+let resultado = 0;
 
 for (let i = 0; i < numbers.length; i++){
-    if (numbers[i] > maiorNumero) {
-        maiorNumero = numbers[i];
+    if (numbers[i] % 2 !== 0) {
+        resultado ++;
     }
 }
-console.log(maiorNumero);
+if (resultado == 0) {
+    console.log("nenhum valoe impar encontrado");
+}
+else {
+    console.log(resultado);
+}
