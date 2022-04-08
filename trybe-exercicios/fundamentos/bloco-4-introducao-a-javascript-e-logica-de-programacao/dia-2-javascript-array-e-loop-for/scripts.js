@@ -1,5 +1,12 @@
-let numbers = [1,  2,  3,  4,  5,  6,  7,  8 ,9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (let i = 0; i < numbers.length; i++) {
-    console.log(numbers[i] / 2);
-}
+for (let i = 1; i < numbers.length; i ++) {
+    for (let index = 0; index < i; index ++) {
+      if (numbers[i] < numbers[index]) {
+        let ordem = numbers[i];
+        numbers[i] = numbers[index];
+        numbers[index] = ordem;
+      }
+    }
+  }
+  console.log(numbers)
