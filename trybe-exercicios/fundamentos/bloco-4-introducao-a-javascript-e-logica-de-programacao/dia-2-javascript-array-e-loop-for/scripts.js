@@ -4,4 +4,5 @@ let resultado = 0;
 for(let i = 0; i < numbers.length; i++) {
 resultado += numbers[i];
 }
-console.log(resultado)
+let média = resultado / numbers.length;
+console.log(média);
