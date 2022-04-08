@@ -5,4 +5,10 @@ for(let i = 0; i < numbers.length; i++) {
 resultado += numbers[i];
 }
 let média = resultado / numbers.length;
-console.log(média);
+
+if (média > 20) {
+    console.log("valor maior que 20");
+}
+else {
+    console.log("valor menor ou igual a 20");
+}
