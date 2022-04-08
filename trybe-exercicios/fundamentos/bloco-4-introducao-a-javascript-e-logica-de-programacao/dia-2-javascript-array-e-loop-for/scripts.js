@@ -1,12 +1,13 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers2 = [];
 
-for (let i = 1; i < numbers.length; i ++) {
-    for (let index = 0; index < i; index ++) {
-      if (numbers[i] > numbers[index]) {
-        let ordem = numbers[i];
-        numbers[i] = numbers[index];
-        numbers[index] = ordem;
-      }
-    }
+for (let i = 0; i < numbers.length; i ++) {
+  if (i + 1 <numbers.length){
+      numbers2.push(numbers[i] * numbers[i + 1]);
   }
-  console.log(numbers)
+  else{
+      numbers2.push(numbers[i] * 2);
+  }
+
+}
+console.log(numbers2)
