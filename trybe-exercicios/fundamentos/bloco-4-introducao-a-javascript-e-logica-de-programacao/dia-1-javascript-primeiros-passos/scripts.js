@@ -1,10 +1,11 @@
-const a = 27;
-const b = 79;
-const c = 12;
+const custo = 30;
+const venda = 90;
 
-let impar = false ;
-
-if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0) {
-  impar = true;
+if (custo >= 0 && venda >= 0) {
+  const custo_imposto = custo + 18;
+  const lucro = (venda - custo_imposto) * 1000;
+  console.log(lucro);
 }
-console.log(impar);
+else {
+  console.log("Error");
+};
