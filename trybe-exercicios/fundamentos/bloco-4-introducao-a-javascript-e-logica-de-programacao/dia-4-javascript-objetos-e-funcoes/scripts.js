@@ -5,5 +5,5 @@ let info = {
 }
     info ['recorrente'] = 'sim';
     for (let index in info) {
-        console.log(index)
+        console.log(info[index])
     }
