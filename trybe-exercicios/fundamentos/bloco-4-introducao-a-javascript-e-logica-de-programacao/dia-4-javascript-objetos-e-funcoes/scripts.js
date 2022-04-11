@@ -15,4 +15,4 @@ let leitor = {
     autor: 'JK Rowling',
     editora: 'Rocco',
   });
-  console.log(leitor.livrosFavoritos)
+  console.log('Julia tem '+leitor.livrosFavoritos.length+' livros favoritos')
