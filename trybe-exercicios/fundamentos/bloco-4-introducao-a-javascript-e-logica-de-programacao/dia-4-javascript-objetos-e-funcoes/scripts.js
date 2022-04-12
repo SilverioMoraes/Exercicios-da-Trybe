@@ -1,13 +1,12 @@
-/* let palavra = 'desenvolvimento'; */
-
-function verificaPalindrome (palavra) {
-    let Palindrome = palavra.split('').reverse().join('');
-    if (Palindrome === palavra) {
-        return true;
+let numbers =[2, 3, 6, 7, 10, 1];
+function indiceDoMaior(numbers) {
+    let indiceMaior = 0;
+    for (let index in numbers) {
+      if (numbers[indiceMaior] < numbers[index]) {
+        indiceMaior = index;
+      }
     }
-    else {
-        return false;
-    }
-}
-console.log(verificaPalindrome('arara'));
-console.log(verificaPalindrome('desenvolvimento'));
+    return indiceMaior;
+  }
+  
+  console.log(indiceDoMaior(numbers));
