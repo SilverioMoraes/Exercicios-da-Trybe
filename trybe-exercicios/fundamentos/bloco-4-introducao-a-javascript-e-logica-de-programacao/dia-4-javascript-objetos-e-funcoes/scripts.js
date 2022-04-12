@@ -1,12 +1,12 @@
-let numbers =[2, 4, 6, 7, 10, 0, -3];
-function indiceDoMenor(numbers) {
-    let indiceMenor = 0;
-    for (let index in numbers) {
-      if (numbers[indiceMenor] > numbers[index]) {
-        indiceMenor = index;
-      }
+let nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+function nomeMaisExtenco (nomes){
+    let maiorNome = nomes[0];
+    for(let index in nomes) {
+        if (maiorNome.length < nomes[index].length){
+            maiorNome = nomes[index];
+        }
     }
-    return indiceMenor;
-  }
-  
-  console.log(indiceDoMenor(numbers));
+    return maiorNome;
+}
+console.log(nomeMaisExtenco(nomes));
