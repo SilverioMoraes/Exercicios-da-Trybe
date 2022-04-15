@@ -6,3 +6,4 @@ let paragrafo = document.getElementsByTagName("p");
 for(let i = 0; i < paragrafo.length;i ++){
 paragrafo[i].style.textTransform = "uppercase";
 }
+console.log(document.getElementsByTagName("p"));
