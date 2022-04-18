@@ -60,6 +60,7 @@
       // COLOQUE SEU CÓDIGO AQUI
       let item = document.createElement('h1')
       item.innerText ='Exercício 5.2 - JavaScript DOM ';
+      item.className = 'title'
       document.querySelector('body').appendChild(item);
 
       let item2 = document.createElement('main')
@@ -104,8 +105,9 @@
         item9.className = 'description'
         document.querySelector('main').appendChild(item9);
       }
-      item.className = 'title'
+      document.querySelector('.main-content').removeChild(item5)
 
+ 
       
     </script>
   </body>
