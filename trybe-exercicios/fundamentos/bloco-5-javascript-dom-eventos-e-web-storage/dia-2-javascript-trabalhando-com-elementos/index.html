@@ -87,6 +87,18 @@
       imagem.className = 'small-image';
       document.querySelector('.left-content').appendChild(imagem);
       
+      let item8 = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(item8);
+
+      let conteudo = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      let itemLista = document.querySelector('ul');
+      for(i = 0; i < conteudo.length; i ++) {
+        let lista = conteudo[i];
+        let conteudoLista = document.createElement('li');
+        conteudoLista.innerText = lista;
+        itemLista.appendChild(conteudoLista)
+      }
 
     </script>
   </body>
