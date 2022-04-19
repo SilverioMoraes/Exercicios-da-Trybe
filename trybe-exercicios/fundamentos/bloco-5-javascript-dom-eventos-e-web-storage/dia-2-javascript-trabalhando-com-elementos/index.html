@@ -108,7 +108,13 @@
         document.querySelector('main').appendChild(item9);
       }
       document.querySelector('.main-content').removeChild(item5)
-      
+
+      let liItem = document.querySelectorAll('li');
+      for (let i in liItem){
+        if (liItem[i].innerText.includes('nove') || liItem[i].innerText.includes('dez')){
+           document.querySelector('ul').removeChild(liItem[i]);
+        }
+      }
     </script>
   </body>
 </html>
