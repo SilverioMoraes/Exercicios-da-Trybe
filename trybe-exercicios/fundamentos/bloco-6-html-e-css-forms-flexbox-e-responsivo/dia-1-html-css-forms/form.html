@@ -14,19 +14,29 @@
   <main>
     <form class="formulário" action="" method="post">
       <div class="estilo-p">
-        <p></p>
-        <input type="text"><br>
-        <p>Email:</p>
-        <input type="text"><br>
-        <input type="radio" name="opção" value="cidade">Cidade
-        <input type="radio" name="opção" value="campo">Campo
-        <input type="radio" name="opção" value="praia">Praia
-        <input type="radio" name="opção" value="montanhas">Montanhas<br><br>
+        <p>Nome:</p>
+        <input placeholder="Digite seu nome aqui" minlength="10" maxlength="41" type="text"><br>
+        <p>E-mail:</p>
+        <input placeholder="Digite seu e-mail aqui" minlength="10" maxlength="51" type="text"><br>
+        <label for="cidade">
+        <input id="cidade" type="radio" name="opção" value="cidade">Cidade
+      </label>
+      <label for="campo">
+        <input id="campo" type="radio" name="opção" value="campo">Campo
+      </label>
+      <label for="praia">
+        <input id="praia" type="radio" name="opção" value="praia">Praia
+      </label>
+      <label for="montanhas">
+        <input id="montanhas" type="radio" name="opção" value="montanhas">Montanhas
+      </label>
+        <br><br>
+      
         <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p><br>
-        <textarea type="text" name="" id="" cols="30" rows="10" minlength="10" maxlength="500"></textarea>
+        <textarea placeholder="Digite sua resposta aqui" type="text" name="" id="" cols="30" rows="10" minlength="10" maxlength="501"></textarea>
         <p>Data:</p>
-        <input type="text"><br>
-        <input type="checkbox">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?<br>
+        <input placeholder="dd/mm/aaaa" type="text"><br>
+        <input type="checkbox">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?<br><br>
         <input type="checkbox">
      Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.<br>
       <button type="submit">Enviar</button>
