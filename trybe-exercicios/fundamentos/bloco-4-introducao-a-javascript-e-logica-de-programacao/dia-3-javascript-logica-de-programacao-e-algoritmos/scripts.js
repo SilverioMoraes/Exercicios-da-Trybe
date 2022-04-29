@@ -45,18 +45,29 @@ console.log(maiorNprimo);
 let n = 5;
 let asteristico = '*';
 let linha ='';
-for (i = 0; i < n; i ++) {
+for (let i = 0; i < n; i ++) {
   linha = linha + asteristico ;
 };
 // console.log(linha);
-for (i = 0; i < n; i ++) {
+for (let i = 0; i < n; i ++) {
   console.log(linha);
 };
 
 let tamanho = 5;
 let asteristico = '*';
 let linha ='';
-for (i = 0; i <= tamanho; i ++) {
+let pos = tamanho;
+for (let i = 0; i <= tamanho; i ++) {
+  for(let j = 0; j <= tamanho; j ++) {
+    if (j < pos){
+      linha = linha + ' ';
+    }
+    else {
+      linha = linha + asteristico;
+    }
+  }
   console.log(linha);
-  linha = linha + asteristico ;
+  linha = '';
+  pos -= 1;
 };
+
