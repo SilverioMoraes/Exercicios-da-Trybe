@@ -52,3 +52,11 @@ for (i = 0; i < n; i ++) {
 for (i = 0; i < n; i ++) {
   console.log(linha);
 };
+
+let tamanho = 5;
+let asteristico = '*';
+let linha ='';
+for (i = 0; i <= tamanho; i ++) {
+  console.log(linha);
+  linha = linha + asteristico ;
+};
