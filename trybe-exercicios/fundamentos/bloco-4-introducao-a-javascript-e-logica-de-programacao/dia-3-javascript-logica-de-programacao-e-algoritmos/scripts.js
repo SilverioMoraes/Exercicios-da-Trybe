@@ -41,3 +41,14 @@ for (let n = 0; n <=50; n ++) {
   }
 }
 console.log(maiorNprimo);
+
+let n = 5;
+let asteristico = '*';
+let linha ='';
+for (i = 0; i < n; i ++) {
+  linha = linha + asteristico ;
+};
+// console.log(linha);
+for (i = 0; i < n; i ++) {
+  console.log(linha);
+};
