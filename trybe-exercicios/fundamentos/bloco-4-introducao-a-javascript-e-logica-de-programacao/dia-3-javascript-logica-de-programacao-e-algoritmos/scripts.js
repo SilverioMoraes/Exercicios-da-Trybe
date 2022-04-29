@@ -27,3 +27,17 @@ for (let i = 0; i < array.length; i ++) {
 }
 console.log(menorPalavra);
 
+let maiorNprimo = 0;
+
+for (let n = 0; n <=50; n ++) {
+  let primo = true;
+  for(let d = 2; d < n; d ++) {
+    if (n % d === 0){
+      primo = false;
+    }
+  }
+  if (primo) {
+    maiorNprimo = n;
+  }
+}
+console.log(maiorNprimo);
