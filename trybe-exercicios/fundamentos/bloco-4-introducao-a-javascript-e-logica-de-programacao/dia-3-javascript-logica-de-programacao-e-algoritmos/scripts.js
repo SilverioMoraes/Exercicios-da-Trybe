@@ -56,6 +56,14 @@ for (let i = 0; i < n; i ++) {
 let tamanho = 5;
 let asteristico = '*';
 let linha ='';
+for (i = 0; i <= tamanho; i ++) {
+  console.log(linha);
+  linha = linha + asteristico ;
+}
+
+let tamanho = 5;
+let asteristico = '*';
+let linha ='';
 let pos = tamanho;
 for (let i = 0; i <= tamanho; i ++) {
   for(let j = 0; j <= tamanho; j ++) {
@@ -71,3 +79,24 @@ for (let i = 0; i <= tamanho; i ++) {
   pos -= 1;
 };
 
+let n = 5;
+let asteristico = '*';
+let linha ='';
+let meio = (n + 1) / 2;
+let esquerda = meio;
+let direita = meio;
+
+for (let i = 0; i <= meio; i ++) {
+  for(let j = 0; j <= n; j ++) {
+    if (j > esquerda && j < direita){
+      linha = linha + asteristico;
+    }
+    else {
+      linha = linha + ' ';
+    }
+  }
+  console.log(linha);
+  linha = '';
+  direita += 1;
+  esquerda -= 1;
+}
