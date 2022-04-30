@@ -100,3 +100,24 @@ for (let i = 0; i <= meio; i ++) {
   direita += 1;
   esquerda -= 1;
 }
+
+let n = 7;
+let asteristico = '*';
+let meio = (n + 1) / 2;
+let esquerda = meio;
+let direita = meio;
+
+for (let i = 1; i <= meio; i ++) {
+  let linhas = '';
+  for (let j = 1; j <= n; j ++) {
+    if (j == esquerda || j == direita || i == meio) {
+      linhas += asteristico;
+    }
+      else {
+        linhas += ' ';
+      }
+  }
+  esquerda -= 1;
+  direita += 1;
+  console.log(linhas);
+}
