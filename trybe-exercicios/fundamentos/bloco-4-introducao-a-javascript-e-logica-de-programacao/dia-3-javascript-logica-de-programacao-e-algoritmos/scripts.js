@@ -121,3 +121,16 @@ for (let i = 1; i <= meio; i ++) {
   direita += 1;
   console.log(linhas);
 }
+
+let d = 1;
+let checar = 50;
+
+for (let n = 2; n <= checar; n ++) {  
+    if (checar % n === 0) d += 1;
+}    
+    if (d === 2) {
+        console.log(checar + ' é primo')
+    }
+      else {
+        console.log(checar + ' não é primo')
+      };
