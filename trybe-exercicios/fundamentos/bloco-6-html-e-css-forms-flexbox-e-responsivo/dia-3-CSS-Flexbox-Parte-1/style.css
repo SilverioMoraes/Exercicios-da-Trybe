@@ -6,7 +6,9 @@
 }
 
 .header-img {
+  display: flex;
   width: 70px;
+  border: 1px solid red;
 }
 
 .gallery-img {
@@ -16,4 +18,13 @@
 .social-img {
   width: 25px;
   margin-left: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  color: aliceblue;
+  background-color: #3b3b3b;
+  border: 1px solid red;
 }
