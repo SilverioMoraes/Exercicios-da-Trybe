@@ -28,3 +28,10 @@
   background-color: #3b3b3b;
   border: 1px solid red;
 }
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  font-size: 150%;
+}
