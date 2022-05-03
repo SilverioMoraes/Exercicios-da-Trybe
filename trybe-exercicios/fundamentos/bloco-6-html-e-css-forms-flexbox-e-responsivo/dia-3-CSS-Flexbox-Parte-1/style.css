@@ -46,7 +46,8 @@
 
 .rede-social {
   display: flex;
-  border: 1px solid red;
+  justify-content: center;
+  align-items:flex-end;
 }
 
 .divs {
