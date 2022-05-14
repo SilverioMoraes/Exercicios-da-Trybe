@@ -2,7 +2,7 @@ const employee = (nomeCompleto) => {
     const email = nomeCompleto.toLowerCase().replace(' ', '_');
     return {nomeCompleto, email:`${email}@trybe.com`};
 }
-console.log(employee('Pedro Guerra'));
+// console.log(employee('Pedro Guerra'));
 
 const newEmployees = (callback) => {
     const employees = {
