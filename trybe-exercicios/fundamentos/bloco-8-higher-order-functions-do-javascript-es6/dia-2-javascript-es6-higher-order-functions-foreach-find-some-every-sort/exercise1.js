@@ -145,9 +145,16 @@ function smallerName() {
   }
 //   console.log(booksOrderedByReleaseYearDesc());
 
-const expectedResult = false;
+// const expectedResult = false;
 
 function everyoneWasBornOnSecXX() {
     return books.every((book) => (book.author.birthYear > 1900 && book.author.birthYear <= 2000));
 }
-console.log(everyoneWasBornOnSecXX());
+// console.log(everyoneWasBornOnSecXX());
+
+// const expectedResult = true;
+
+function someBookWasReleaseOnThe80s() {
+    return books.some((book) => (book.releaseYear > 1980 && book.releaseYear <= 1989));
+}
+console.log(someBookWasReleaseOnThe80s());
