@@ -1,5 +1,4 @@
-const weightKG = 120;
-const heightCM = 189;
+const readline = require('readline-sync');
 
 const calculatorBMI = (weight, height) => {
   console.log(`Peso: ${weight}, Altura: ${height}`);
@@ -10,7 +9,9 @@ const calculatorBMI = (weight, height) => {
 };
 
 const resultBMI = () => {
-  const bmi = calculatorBMI(weightKG, heightCM);
+  const weight = readline.questionInt(`What’ your weight?`);
+  const height = readline.questionInt(`What’ your height?`);
+  const bmi = calculatorBMI(weight, height);
   console.log(`IMC: ${bmi.toFixed(2)}`);
 };
 
