@@ -1,3 +1,4 @@
+// ./Character.ts
 type Character = {
   nickname: string;
   class: string;
