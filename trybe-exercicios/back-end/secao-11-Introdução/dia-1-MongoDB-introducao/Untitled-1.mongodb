@@ -1,0 +1,10 @@
+// queries exercices dia 1 part II
+use('class');
+
+// Exerc-7 db.books.countDocuments();
+
+// Exerc-8 db.books.countDocuments({ status: 'PUBLISH'});
+
+// Exerc-9 db.books.find({}, {_id: 0, title: 1, isbn: 1, pageCount: 1}).limit(3);
+
+// Exerc-10 db.books.find({status: 'MEAP'}, { _id: 1, title: 1, authors: 1}).limit(10).skip(5);
