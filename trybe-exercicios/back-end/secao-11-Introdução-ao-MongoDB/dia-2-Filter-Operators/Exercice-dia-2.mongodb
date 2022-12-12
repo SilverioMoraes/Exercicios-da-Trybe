@@ -1,0 +1,37 @@
+// queries-exercices-dia-2
+
+use('class');
+
+// db.superheroes.countDocuments({});
+
+// Exerc-1 db.superheroes.findOne();
+
+// Exerc-2 db.superheroes.find({"aspects.height": { $lt:180 } });
+
+// Exerc-3 db.superheroes.countDocuments({ "aspects.height": { $lt: 180 } });
+
+// Exerc-4 db.superheroes.countDocuments({ "aspects.height": { $lte: 180 } });
+
+// Exerc-5 db.superheroes.findOne({ "aspects.height": { $gte: 200 } });
+
+// Exerc-6 db.superheroes.countDocuments({ "aspects.height": { $gte: 200 } });
+
+// Exerc-7
+// sem $eq db.superheroes.find({ "aspects.eyeColor": "green"});
+// com $eq db.superheroes.find({ "aspects.eyeColor": { $eq: "green" } });
+
+// Exerc-8
+// sem $eq db.superheroes.find({ "aspects.eyeColor": "blue"});
+// sem $eq db.superheroes.find({ "aspects.eyeColor": { $eq: "blue" } });
+
+// Exerc-9 db.superheroes.find({ "aspects.hairColor": { $in: ['black', 'No Hair']}});
+
+// Exerc-10 db.superheroes.countDocuments({ "aspects.hairColor": { $in: ['black', 'No Hair']}});
+
+// Exerc-11 db.superheroes.find({ "aspects.hairColor": { $nin: ['black', 'No Hair']}});
+
+// Exerc-12 db.superheroes.countDocuments({ "aspects.height": { $not: { $gt: 180 } } });
+
+// Exerc-13 db.superheroes.find({ $nor: [{ race: "Human" }, { "aspects.height": { $gt: 180 } }] });
+
+// Exerc-14 db.superheroes.find({ $and: [{ $or: [{ "aspects.height": 180}, { "aspects.height": 200 }] }, { publisher: 'Marvel Comics' }] });
